@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | Crème & Crumb</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            ✦ CRÈME <span>& CRUMB</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button>♡</button>
+            <button>🛒 <span id="cart-count">0</span></button>
+        </div>
+    </header>
+
+
+    <!-- SHOP HERO -->
+    <section class="shop-hero">
+
+        <div>
+            <p class="small-title">FRESH FROM OUR OVEN</p>
+
+            <h1>
+                Something delicious<br>
+                <i>for everyone.</i>
+            </h1>
+
+            <p>
+                Discover our freshly baked cakes, pastries,
+                cupcakes and breads, made with love every day.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORY -->
+    <section class="categories">
+
+        <button class="category active">All</button>
+        <button class="category">Cakes</button>
+        <button class="category">Cupcakes</button>
+        <button class="category">Pastries</button>
+        <button class="category">Breads</button>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <main class="shop-container">
+
+        <div class="shop-heading">
+            <div>
+                <p class="small-title">OUR COLLECTION</p>
+                <h2>Best sellers worth sharing.</h2>
+            </div>
+
+            <p>Freshly baked • Made with love</p>
+        </div>
+
+
+        <div class="products">
+
+            <!-- PRODUCT 1 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/chocolate-cake.jpg" alt="Chocolate Cake">
+
+                    <span class="tag">BEST SELLER</span>
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">CAKES</p>
+
+                    <h3>Classic Chocolate Cake</h3>
+
+                    <p>
+                        Rich chocolate cake with smooth
+                        chocolate cream.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹699</strong>
+
+                        <button onclick="addToCart()">
+                            Add to cart
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/cupcake.jpg" alt="Vanilla Cupcakes">
+
+                    <span class="tag">POPULAR</span>
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">CUPCAKES</p>
+
+                    <h3>Vanilla Sprinkle Cupcakes</h3>
+
+                    <p>
+                        Soft vanilla cupcakes topped with
+                        creamy frosting.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹349</strong>
+
+                        <button onclick="addToCart()">
+                            Add to cart
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/croissant.jpg" alt="Butter Croissant">
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">PASTRIES</p>
+
+                    <h3>Golden Butter Croissant</h3>
+
+                    <p>
+                        Crisp, flaky and buttery,
+                        baked fresh every morning.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹149</strong>
+
+                        <button onclick="addToCart()">
+                            Add to cart
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 4 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/redvelvet.jpg" alt="Red Velvet Cake">
+
+                    <span class="tag">FAVOURITE</span>
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">CAKES</p>
+
+                    <h3>Red Velvet Cake</h3>
+
+                    <p>
+                        Soft red velvet layers with
+                        delicious cream cheese frosting.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹799</strong>
+
+                        <button onclick="addToCart()">
+                            Add to cart
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 5 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/donut.jpg" alt="Chocolate Donuts">
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">PASTRIES</p>
+
+                    <h3>Chocolate Glazed Donuts</h3>
+
+                    <p>
+                        Soft donuts covered with
+                        silky chocolate glaze.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹249</strong>
+
+                        <button onclick="addToCart()">
+                            Add to cart
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 6 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/bread.jpg" alt="Fresh Bread">
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">BREADS</p>
+
+                    <h3>Fresh Artisan Bread</h3>
+
+                    <p>
+                        Handmade bread with a golden crust
+                        and soft centre.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹199</strong>
+
+                        <button onclick="addToCart()">
+                            Add to cart
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div>
+            <h2>CRÈME & CRUMB</h2>
+            <p>
+                Handmade treats, baked fresh with love.
+            </p>
+        </div>
+
+        <div>
+            <p>© 2026 Crème & Crumb</p>
+        </div>
+
+    </footer>
+
+
+    <!-- CART SCRIPT -->
+    <script>
+
+        let cartCount = 0;
+
+        function addToCart() {
+
+            cartCount++;
+
+            document.getElementById("cart-count").innerText =
+                cartCount;
+
+            alert("Added to your cart! 🧁");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
